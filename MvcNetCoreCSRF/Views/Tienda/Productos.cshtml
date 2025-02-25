@@ -1,0 +1,23 @@
+﻿<h1 style="color: skyblue">Productos</h1>
+
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <label>Direccion de envio</label>
+    <input type="text" name="direccion" class="form-control"/>
+    <button class="btn btn-outline-info">Realizar pedido</button>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <input type="checkbox" name="producto" value="Iphone 19 1.080€" />
+        </li>
+        <li class="list-group-item">
+            <input type="checkbox" name="producto" value="Tesla 45.000€" />
+        </li>
+        <li class="list-group-item">
+            <input type="checkbox" name="producto" value="Ordenador Gaming 2.500€" />
+        </li>
+        <li class="list-group-item">
+            <input type="checkbox" name="producto" value="Xiaomi MiMax 760€" />
+        </li>
+    </ul>
+</form>
